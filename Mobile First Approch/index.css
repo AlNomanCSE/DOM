@@ -86,8 +86,9 @@ Main NavBar
 
 .main-navbar {
     background-color: var(--mainBlack);
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .main-navbar ul {
@@ -101,10 +102,7 @@ Main NavBar
     transition: var(--mainTransition);
 }
 
-.main-navbar a:hover {
-    color: #FB88B4;
 
-}
 
 @media screen and (min-width:992px) {
     .main-navbar ul {
@@ -113,5 +111,51 @@ Main NavBar
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
+    }
+}
+
+
+/* 
+=====
+Hero
+======
+*/
+
+.hero-header {
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), url("./2-setup/grid-projects/images/image-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--offWhite);
+}
+
+.hero-banner {
+    /* padding: 0 1rem; */
+}
+
+.hero-banner p {
+    width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .hero-banner {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), url("./2-setup/grid-projects/images/image-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: scroll;
     }
 }
